@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Language Learning App</h1>
+        <nav>
+            <ul>
+                <li><a href="#lessons">Lessons</a></li>
+                <li><a href="#quiz">Quizzes</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#forum">Community Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Interactive Lessons Section -->
+        <section id="lessons">
+            <h2>Interactive Lessons</h2>
+            <div class="lesson" id="lesson1">
+                <p>Lesson 1: Basic Greetings</p>
+                <button onclick="startLesson('lesson1')">Start Lesson</button>
+            </div>
+            <div class="lesson" id="lesson2">
+                <p>Lesson 2: Numbers</p>
+                <button onclick="startLesson('lesson2')">Start Lesson</button>
+            </div>
+            <!-- Add more lessons here -->
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz">
+            <h2>Take a Quiz</h2>
+            <div id="quiz-container"></div>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <div id="achievement-list"></div>
+        </section>
+
+        <!-- Community Forum Section -->
+        <section id="forum">
+            <h2>Community Forum</h2>
+            <div id="forum-container">
+                <h3>Discussions</h3>
+                <ul id="forum-posts">
+                    <!-- Forum posts will go here -->
+                </ul>
+                <input type="text" id="newPost" placeholder="Enter your message">
+                <button onclick="postToForum()">Post</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Language Learning App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
